@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "documento": "1",
+    "nombre": "ADMINISTRADOR",
+    "login": "ADMINISTRADOR",
+    "clave": "011c945f30ce2cbafc452f39840f025693339c42",
+    "email": "SISTEMAS@CARGOLAPLOGISTICA.COM",
+    "id_dependencia": null,
+    "estado": "A"
+  },
+  {
+    "id": 4,
+    "documento": "5555555",
+    "nombre": "PAULA NOGUERA",
+    "login": "PAULA.NOGUERA",
+    "clave": "7110eda4d09e062aa5e4a390b0a572ac0d2c0220",
+    "email": "INFO@CARGOLAPLOGISTICA.COM",
+    "id_dependencia": null,
+    "estado": "A"
+  },
+  {
+    "id": 10,
+    "documento": "123456789",
+    "nombre": "DANIEL FELIPE VARGAS MARTINEZ",
+    "login": "DANIEL.VARGAS",
+    "clave": "34b4c3f998f1e02399ed4b54ce76d7553fb68455",
+    "email": "DANIEL.VARGAS@CARGOLAPLOGISTICA.COM",
+    "id_dependencia": 12,
+    "estado": "A"
+  },
+  {
+    "id": 12,
+    "documento": "987654321",
+    "nombre": "LAURA NATALY BUITRAGO SANCHEZ",
+    "login": "LAURA.BUITRAGO",
+    "clave": "7110eda4d09e062aa5e4a390b0a572ac0d2c0220",
+    "email": "CONTABILIDAD@CARGOLAPLOGISTICA.COM",
+    "id_dependencia": 13,
+    "estado": "A"
+  }
+]

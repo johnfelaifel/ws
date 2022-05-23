@@ -3,7 +3,7 @@
 define ("APPNAME","ws");
 define ("APP_PORT","80");
 define ("PORT_DB","3306");
-define ("SERVER_DB","21.12.12.100");
+define ("SERVER_DB","21.12.12.4");
 define ("USER_DB","sicom");
 define ("PASSWORD_DB","Ng9v6J8xheCqIjSW");
 define ("DATABASE","simec");

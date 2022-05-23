@@ -3,9 +3,9 @@
 define ("APPNAME","ws");
 define ("APP_PORT","80");
 define ("PORT_DB","3306");
-define ("SERVER_DB","127.0.0.1");
-define ("USER_DB","dev");
-define ("PASSWORD_DB","1234");
+define ("SERVER_DB","21.12.12.100");
+define ("USER_DB","desarrollos");
+define ("PASSWORD_DB","desarrollos");
 define ("DATABASE","simec");
 define ("DEFAULT_CONTROLLER","ErrorController");
 define ("ACTION_DEFAULT","index");

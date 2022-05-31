@@ -1,14 +1,19 @@
 <?php
-
 define ("APPNAME","ws");
 define ("APP_PORT","80");
 define ("PORT_DB","3306");
-define ("SERVER_DB","21.12.12.4");
-define ("USER_DB","localApps");
-define ("PASSWORD_DB","CQAjKGgODwe[1]ej");
 define ("DATABASE","simec");
 define ("DEFAULT_CONTROLLER","ErrorController");
 define ("ACTION_DEFAULT","index");
+/* Production */
+define ("SERVER_DB","21.12.12.4");
+define ("USER_DB","localApps");
+define ("PASSWORD_DB","CQAjKGgODwe[1]ej");
+
+/* Development */
+//define ("SERVER_DB","127.0.0.1");
+//define ("USER_DB","devApps");
+//define ("PASSWORD_DB","77778888");
 
 //Ruta de URL general de la aplicacion
 $tmpRuta=explode(APPNAME, $_SERVER['PHP_SELF']);

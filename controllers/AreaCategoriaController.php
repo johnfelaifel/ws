@@ -130,6 +130,32 @@ class AreaCategoriaController
         echo json_encode($response);
     }
 
+    public function getAllFullxArea()
+    {
+        //Evaluacion de método de recepcion // Formateo de Datos
+        $method = $_SERVER['REQUEST_METHOD'];
+        if ($method == 'GET') {
+            $idArea = isset($_GET['id_area']) ? filter_var(trim($_GET['id_area']), FILTER_SANITIZE_NUMBER_INT) : false;
+        } else if ($method == 'POST') {
+            $idArea = isset($_POST['id_area']) ? filter_var(trim($_POST['id_area']), FILTER_SANITIZE_NUMBER_INT) : false;
+        } else {
+            $response = array();
+            $response[] = ['error' => "Method Invalid"];
+        }
+        //Obtención de datos
+        if ($idArea) {
+            $data = new $this->table();
+            $data->setIdArea($idArea);
+            $response = $data->getAllFullxArea();
+        } else {
+            $response = array();
+            $response[] = ['error' => "id_area is Required"];
+        }
+        echo json_encode($response);
+    }    
+
+    
+
     public function updateOne()
     {
         //Evaluacion de método de recepcion // Formateo de Datos        

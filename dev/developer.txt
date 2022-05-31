@@ -1,8 +1,0 @@
-- Eliminar strtoupper de todas las capturas de texto para evitar el error de la tilde en minuscula al realizar la conversion
-- Antes de Actualizar o eliminar un registro, verificar que exista
-- Actualizar en todos los contraldores el uso de: $response[] = ['status' => "error", 'description' => $value['description']];
-
-2022-04-20
-- En todos los metodos delete, cambiasr el DELETE por POST como método de recepción de datos
-- En todos los metodos create, aceptar Post y Get y camputrar los datos por Request (Ejemplo en DocumentoTagController)
-- En todos los modelos agregar el metodo updateOne (AreaCategoria)

@@ -128,6 +128,26 @@ class DocumentoController
         echo json_encode($response);
     }
 
+    public function getAllFullxArea()
+    {
+        //Evaluacion de método de recepcion // Formateo de Datos
+        $method = $_SERVER['REQUEST_METHOD'];
+        if ($method == 'POST' || $method == 'GET') {
+            $id = isset($_REQUEST['id_area']) ? filter_var(trim($_REQUEST['id_area']), FILTER_SANITIZE_NUMBER_INT) : false;
+        } else {
+            $response[] = ['status' => "error", 'description' => "Invalid Method"];
+        }
+        //Obtención de datos
+        if ($id) {
+            $data = new $this->table();
+            $data->setIdArea($id);
+            $response = $data->getAllFullxArea();
+        } else {
+            $response[] = ['status' => "error", 'description' => "id_area is Required"];
+        }
+        echo json_encode($response);
+    }
+
     public function getAllxCategoria()
     {
         //Evaluacion de método de recepcion // Formateo de Datos

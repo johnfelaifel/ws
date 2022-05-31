@@ -91,6 +91,16 @@ class AreaCategoria
         return $response = $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function getAllFullxArea()
+    {
+        $sql = "SELECT * FROM area_categoria WHERE id_area=:id_area ORDER BY nombre ASC";
+        $stmt = $this->db->prepare($sql);
+        $stmt->bindValue(":id_area", $this->getIdArea(), PDO::PARAM_INT);
+        $stmt->execute();
+        return $response = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }    
+    
+
     public function getAllFull()
     {
         $sql = "SELECT * FROM area_categoria ORDER BY nombre ASC";

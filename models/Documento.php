@@ -131,12 +131,21 @@ class Documento
 
     public function getAllxArea()
     {
-        $sql = "SELECT * FROM documento WHERE id_area=:id_area";
+        $sql = "SELECT * FROM documento WHERE estado = 'A' AND id_area=:id_area";
         $stmt = $this->db->prepare($sql);
         $stmt->bindValue(":id_area",$this->getIdArea(),PDO::PARAM_INT);
         $stmt->execute();
         return $response = $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function getAllFullxArea()
+    {
+        $sql = "SELECT * FROM documento WHERE id_area=:id_area";
+        $stmt = $this->db->prepare($sql);
+        $stmt->bindValue(":id_area",$this->getIdArea(),PDO::PARAM_INT);
+        $stmt->execute();
+        return $response = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }    
 
     public function getAllxCategoria()
     {
